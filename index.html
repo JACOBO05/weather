@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light">
+        <div class="container-fluid  justify-content-end">
+            <a class="navbar-brand" href="#">
+                LOGO
+            </a>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <div class="container-fluid mb-4">
+        <div class="container bg-white shadow-lg mb-5 position-relative" id="container">
+            <div class="row">
+                <div class="container-fluid position-relative px-5">
+                    <div class="container my-4" id="banner">
+                        <div class="position-absolute top-50 start-0 translate-middle-y" id="weather">
+                            <div class="position-relative shadow-lg " id="box">
+                                <div class="position-absolute top-0 start-50 translate-middle" id="box-icon">
+                                    <img src="" alt="" srcset="" id="iconBogota" class="position-absolute top-50 start-50 translate-middle">
+                                </div>
+                                <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                                    <h2 class="text" id="weatherBogota"></h2>
+                                </div>
+                            </div>                            
+                            <div class="position-absolute top-50 start-100 translate-middle">
+                                <h2 class="ms-5 ps-5 text-white fw-bold"><i class="fas fa-map-marker-alt"></i>Bogotá</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container pb-4">
+                <div class="container">
+                    <div class="row ">
+                        <!-- Column ciudades -->
+                        <div class="col-lg-3">
+                            <div class="d-flex">
+                                <p class="fw-bold">3 Days</p>&nbsp;Forecast
+                            </div>
+
+                            <div class="ciudad b-r mb-3 sombra-s row">
+                                <div class="col-3 display-3 position-relative">
+                                    <img src="" alt="" srcset="" id="icon1" class="position-absolute top-50 start-50 translate-middle">
+                                </div>
+                                <div class="col-5">
+                                    <h6 id="name1"></h6>
+                                    <p id="status1"></p>
+                                </div>
+                                <div class="col-4 ciudad-temp b-r">
+                                    <p class="mb-0" id="weather1"></p>
+                                </div>
+                            </div>
+
+                            <div class="ciudad b-r mb-3 sombra-s row">
+                                <div class="col-3 display-3 position-relative">
+                                    <img src="" alt="" srcset="" id="icon2" class="position-absolute top-50 start-50 translate-middle">
+                                </div>
+                                <div class="col-5">
+                                    <h6 id="name2"></h6>
+                                    <p id="status2"></p>
+                                </div>
+                                <div class="col-4 ciudad-temp1 b-r">
+                                    <p class="mb-0" id="weather2"></p>
+                                </div>
+                            </div>
+
+                            <div class="ciudad b-r mb-5 sombra-s row">
+                                <div class="col-3 display-3 position-relative">
+                                    <img src="" alt="" srcset="" id="icon3" class="position-absolute top-50 start-50 translate-middle">
+                                </div>
+                                <div class="col-5">
+                                    <h6 id="name3"></h6>
+                                    <p id="status3"></p>
+                                </div>
+                                <div class="col-4 ciudad-temp1 b-r">
+                                    <p class="mb-0" id="weather3"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- column place -->
+                        <div class="col-lg-3 mb-5">
+                            <div class="d-flex">
+                                <p class="fw-bold">Place to</p>&nbsp;visit
+                            </div>
+                            <div class="container cont-place sombra b-r">
+                                <h4>Paris</h4>
+                                <p>France</p>
+                            </div>
+                        </div>
+
+                        <!-- column reviews -->
+                        <div class="col-lg-3 mb-5">
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <p class="text-muted">+ Top Reviews</p>
+                                </div>
+                                <div class="col-4 d-flex">
+                                    <img src="https://img.icons8.com/plasticine/30/000000/person-male.png" />
+                                    <img src="https://img.icons8.com/plasticine/30/000000/person-male.png" />
+                                    <img src="https://img.icons8.com/plasticine/30/000000/person-male.png" />
+                                </div>
+                            </div>
+                            <div class="container mb-3 b-r cont-top1">
+                                <h6>Museo de arte</h6>
+                                <p>museo</p>
+                            </div>
+                            <div class="container b-r cont-top2 position-relative ">
+                                <div class="btn-top position-absolute top-0 end-0 w-25 b-r"">
+                                    <h2>+</h2>
+                                </div>
+                                <h6 class=" p-2">
+                                    Fotografia
+                                    </h6>
+                                </div>
+                            </div>
+                            <!-- column colab -->
+                            <div class="col-lg-3 position-absolute col-colab " id="colaboration">
+                                <!-- container ciudad-colab -->
+                                <div class="ciudad-colab container-fluid mb-2 b-r shadow">
+                                    <div class="row">
+                                        <div class="col-3 b-r display-3 position-relative container-fluid left-0 colab-icon">
+                                            <img src="" id="iconLyon" class="position-absolute top-50 start-50 translate-middle"/>
+                                        </div>
+                                        <div class="col-3">
+                                            <h2 id="weatherLyon"></h2>
+                                        </div>
+                                        <div class="col-6">
+                                            <h6 id="nameLyon">Lyon</h6>
+                                            <p>France</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 d-flex">
+                                            <p>Humedad:</p>&nbsp;<p id="humidityLyon"></p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p id="speedLyon"></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ciudad-colab  container-fluid mb-2 b-r shadow">
+                                    <div class="row">
+                                        <div class="col-3 b-r display-3 position-relative container-fluid left-0 colab-icon">
+                                            <img src="" id="iconParis" class="position-absolute top-50 start-50 translate-middle"/>
+                                        </div>
+                                        <div class="col-3">
+                                            <h2 id="weatherParis"></h2>
+                                        </div>
+                                        <div class="col-6">
+                                            <h6 id="nameParis"></h6>
+                                            <p>France</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 d-flex">
+                                            <p>Humedad:</p>&nbsp;<p id="humidityParis"></p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p id="speedParis"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- contenedor loc -->
+                                <div class="cont-loc mt-3 shadow b-r">
+                                    <div class="add-loc container mt-3 shadow">
+                                        <p class="b-r w-auto m-auto text-center">Add Location</p>
+                                    </div>
+                                    <div class="img-loc mb-0">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+</body>
+<script src="public/js/bootstrap.min.js"></script>
+<script src="./index.js"></script>
+
+</html>

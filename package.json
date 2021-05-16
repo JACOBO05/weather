@@ -1,0 +1,25 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch assets/sass:public/css",
+    "start": "sass assets/sass:public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yurimarin98/weather.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yurimarin98/weather/issues"
+  },
+  "homepage": "https://github.com/Yurimarin98/weather#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.32.13"
+  }
+}
